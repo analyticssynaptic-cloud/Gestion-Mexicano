@@ -19,7 +19,6 @@
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{background:var(--c-bg);color:var(--c-text);font-family:'Barlow',sans-serif;font-size:15px;line-height:1.6;overflow-x:hidden}
 
-/* COVER */
 .cover{min-height:100vh;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(155deg,#071A33 0%,#0B2545 30%,#134B8B 65%,#1F6DC8 100%);position:relative;overflow:hidden;padding:80px 7vw 60px}
 .cover::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-width='0.35' opacity='0.05'%3E%3Cpath d='M0 40h80M40 0v80'/%3E%3C/g%3E%3C/svg%3E")}
 .cover-stripe{position:absolute;right:-60px;top:0;bottom:0;width:36vw;background:linear-gradient(180deg,rgba(31,109,200,0.15),rgba(114,179,240,0.07));clip-path:polygon(12% 0%,100% 0%,100% 100%,0% 100%);pointer-events:none}
@@ -32,8 +31,8 @@ body{background:var(--c-bg);color:var(--c-text);font-family:'Barlow',sans-serif;
 .cover h1 .tag{display:block;font-size:0.33em;font-weight:300;letter-spacing:6px;text-transform:uppercase;color:rgba(114,179,240,0.75);margin-top:16px}
 .cover-desc{font-size:16.5px;color:#B8D9F8;font-weight:300;max-width:600px;margin:28px 0 52px;line-height:1.78;position:relative}
 .cover-desc strong{color:#fff;font-weight:500}
-.cover-kpis{display:flex;gap:0;flex-wrap:wrap;position:relative;border:1px solid rgba(255,255,255,0.11);border-radius:14px;overflow:hidden;max-width:760px;backdrop-filter:blur(8px)}
-.ck{flex:1;min-width:160px;padding:28px 26px;border-right:1px solid rgba(255,255,255,0.09);background:rgba(255,255,255,0.04);position:relative}
+.cover-kpis{display:flex;gap:0;flex-wrap:wrap;position:relative;border:1px solid rgba(255,255,255,0.11);border-radius:14px;overflow:hidden;max-width:860px;backdrop-filter:blur(8px)}
+.ck{flex:1;min-width:150px;padding:28px 26px;border-right:1px solid rgba(255,255,255,0.09);background:rgba(255,255,255,0.04);position:relative}
 .ck:last-child{border-right:none}
 .ck .num{font-family:'Barlow Condensed',sans-serif;font-size:50px;font-weight:700;color:#fff;line-height:1}
 .ck .num span{font-size:22px;font-weight:400;color:#72B3F0;margin-left:3px}
@@ -41,12 +40,10 @@ body{background:var(--c-bg);color:var(--c-text);font-family:'Barlow',sans-serif;
 .ck .sub{font-size:11.5px;color:rgba(184,217,248,0.65);margin-top:3px}
 .cover-date{position:absolute;bottom:28px;right:7vw;font-family:'Barlow Semi Condensed',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(184,217,248,0.35)}
 
-/* NAV */
 .nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--c-border);display:flex;align-items:center;gap:0;padding:0 5vw;overflow-x:auto;box-shadow:0 1px 18px rgba(11,37,69,0.06)}
 .nav a{font-family:'Barlow Semi Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--c-text3);text-decoration:none;padding:17px 13px;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s}
 .nav a:hover,.nav a.active{color:var(--c-blue2);border-bottom-color:var(--c-blue2)}
 
-/* SECTIONS */
 section{padding:88px 5vw;position:relative}
 section.alt{background:var(--c-surface2)}
 .sec-num{position:absolute;right:5vw;top:80px;font-family:'Barlow Condensed',sans-serif;font-size:clamp(80px,12vw,160px);font-weight:800;color:rgba(19,75,139,0.04);line-height:1;letter-spacing:-4px;user-select:none;pointer-events:none}
@@ -57,7 +54,6 @@ h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(36px,5vw,58px);font
 h2 em{font-style:normal;color:var(--c-blue2)}
 .lead{font-size:15.5px;color:var(--c-text2);max-width:740px;margin-bottom:48px;line-height:1.8}
 
-/* CARDS */
 .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-bottom:48px}
 .kpi{background:var(--c-surface);border:1px solid var(--c-border2);border-radius:var(--radius);padding:26px 22px;border-top:3px solid var(--c-blue2);position:relative;overflow:hidden;transition:box-shadow .2s,transform .2s}
 .kpi:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
@@ -69,7 +65,6 @@ h2 em{font-style:normal;color:var(--c-blue2)}
 .kpi.hi{border-top-color:var(--c-amber)}.kpi.hi::before{background:var(--c-amber-lt)}.kpi.hi .k-val{color:var(--c-amber)}
 .kpi.ok{border-top-color:var(--c-green)}.kpi.ok::before{background:var(--c-green-lt)}
 
-/* CHARTS */
 .charts-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:20px;margin-top:32px}
 .charts-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px;margin-top:32px}
 .chart-card{background:var(--c-surface);border:1px solid var(--c-border2);border-radius:var(--radius);padding:28px 26px;transition:box-shadow .2s}
@@ -78,7 +73,6 @@ h2 em{font-style:normal;color:var(--c-blue2)}
 .chart-title::before{content:'';width:3px;height:14px;background:var(--c-blue2);border-radius:2px;flex-shrink:0}
 .chart-wrap{position:relative}
 
-/* STORY CARDS */
 .story-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .sc{background:var(--c-surface);border:1px solid var(--c-border2);border-radius:var(--radius);padding:28px 26px;position:relative;overflow:hidden;transition:box-shadow .2s,transform .2s}
 .sc:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
@@ -90,7 +84,6 @@ h2 em{font-style:normal;color:var(--c-blue2)}
 .sc h4{font-family:'Barlow Semi Condensed',sans-serif;font-size:15px;font-weight:600;color:var(--c-navy);margin-bottom:10px}
 .sc p{font-size:13.5px;color:var(--c-text2);line-height:1.75}
 
-/* TABLE */
 .tbl-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--c-border2);margin-top:28px;box-shadow:var(--shadow)}
 table{width:100%;border-collapse:collapse;font-size:13px}
 thead th{background:var(--c-navy);color:#B8D9F8;padding:13px 16px;text-align:left;font-family:'Barlow Semi Condensed',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;white-space:nowrap;cursor:pointer;user-select:none}
@@ -104,7 +97,6 @@ tbody td{padding:11px 16px;color:var(--c-text);vertical-align:middle;white-space
 .badge{display:inline-block;padding:2px 10px;border-radius:20px;font-size:11px;font-weight:600}
 .bd-blue{background:var(--c-sky);color:var(--c-blue2)}
 
-/* PROGRESS BARS */
 .prod-list{display:flex;flex-direction:column;gap:16px;margin-top:28px}
 .pbar{display:grid;grid-template-columns:220px 1fr 110px;align-items:center;gap:16px;padding:14px 18px;background:var(--c-surface);border:1px solid var(--c-border2);border-radius:8px;transition:box-shadow .15s}
 .pbar:hover{box-shadow:var(--shadow)}
@@ -114,20 +106,17 @@ tbody td{padding:11px 16px;color:var(--c-text);vertical-align:middle;white-space
 .pbar .p-val{font-family:'Barlow Semi Condensed',sans-serif;font-size:15px;font-weight:600;color:var(--c-blue2);text-align:right}
 .p-pct{font-size:11px;color:var(--c-text3);margin-left:4px}
 
-/* TABS */
 .tab-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:24px;background:var(--c-surface);border:1px solid var(--c-border2);border-radius:var(--radius);padding:6px;width:fit-content;box-shadow:var(--shadow)}
 .tab{padding:7px 16px;border-radius:6px;background:transparent;color:var(--c-text3);border:none;font-family:'Barlow Semi Condensed',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:all .2s}
 .tab:hover{background:var(--c-sky);color:var(--c-blue2)}
 .tab.active{background:var(--c-navy);color:#fff;box-shadow:0 2px 8px rgba(11,37,69,0.2)}
 
-/* HEATMAP */
 .hm-wrap{overflow-x:auto;margin-top:28px}
 .hm-grid{display:grid;gap:5px;min-width:600px}
 .hm-h{background:var(--c-navy);color:#B8D9F8;padding:10px 8px;text-align:center;font-family:'Barlow Semi Condensed',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;border-radius:5px}
 .hm-l{background:var(--c-surface);border:1px solid var(--c-border2);padding:10px 14px;color:var(--c-text2);font-size:12px;font-weight:500;display:flex;align-items:center;border-radius:5px}
 .hm-c{border-radius:5px;display:flex;align-items:center;justify-content:center;font-family:'Barlow Semi Condensed',sans-serif;font-size:13px;font-weight:600;padding:10px 4px}
 
-/* MARKET */
 .market-blocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:20px;margin-top:32px}
 .mb{background:var(--c-surface);border:1px solid var(--c-border2);border-radius:var(--radius);overflow:hidden;transition:box-shadow .2s,transform .2s}
 .mb:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
@@ -141,12 +130,10 @@ tbody td{padding:11px 16px;color:var(--c-text);vertical-align:middle;white-space
 .mb-body li{font-size:13px;color:var(--c-text2);padding-left:18px;position:relative;line-height:1.6}
 .mb-body li::before{content:'—';position:absolute;left:0;color:var(--c-blue3)}
 
-/* ANIMATIONS */
 .fade-in{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .fade-in.show{opacity:1;transform:none}
 .divider{height:1px;background:linear-gradient(90deg,transparent,var(--c-border),transparent);margin:0 5vw}
 
-/* FOOTER */
 footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;align-items:start}
 .f-logo{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:#fff}
 .f-logo span{color:#72B3F0}
@@ -175,12 +162,13 @@ footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template
     REPORTE DE<br>VENTAS EN PISO
     <span class="tag">Marzo 2026</span>
   </h1>
-  <p class="cover-desc">Análisis exhaustivo del inventario en exhibición, rendimiento por promotora, comparativo de plazas y estudio de mercado. <strong>Periodo: 6 – 26 de marzo de 2026.</strong></p>
+  <p class="cover-desc">Análisis de ventas en exhibición por promotora, plaza y referencia. <strong>Periodo: 6 – 31 de marzo de 2026.</strong> 4 plazas activas · 7 promotoras · datos validados del sistema de campo.</p>
   <div class="cover-kpis">
-    <div class="ck"><div class="num">1,467<span>uds</span></div><div class="lbl">Unidades en piso</div><div class="sub">6 referencias activas</div></div>
-    <div class="ck"><div class="num">36</div><div class="lbl">Registros</div><div class="sub">Días de reporte</div></div>
-    <div class="ck"><div class="num">5</div><div class="lbl">Promotoras</div><div class="sub">4 plazas activas</div></div>
-    <div class="ck"><div class="num">40.7<span>uds</span></div><div class="lbl">Promedio / visita</div><div class="sub">Densidad de piso</div></div>
+    <div class="ck"><div class="num">1,813<span>uds</span></div><div class="lbl">Ventas totales</div><div class="sub">6 referencias activas</div></div>
+    <div class="ck"><div class="num">44</div><div class="lbl">Registros</div><div class="sub">6 — 31 de marzo 2026</div></div>
+    <div class="ck"><div class="num">7</div><div class="lbl">Promotoras</div><div class="sub">4 plazas activas</div></div>
+    <div class="ck"><div class="num">41.2<span>uds</span></div><div class="lbl">Promedio / visita</div><div class="sub">Densidad de piso</div></div>
+    <div class="ck"><div class="num">4</div><div class="lbl">Ciudades</div><div class="sub">Cali · Pereira · Barranquilla</div></div>
   </div>
   <div class="cover-date">Marzo 2026</div>
 </div>
@@ -204,14 +192,14 @@ footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template
   <span class="sec-num">01</span>
   <div class="eyebrow">01 — Narrativa principal</div>
   <h2>HALLAZGOS<br><em>CLAVE</em></h2>
-  <p class="lead">En 21 días de operación, cinco promotoras cubrieron cuatro tiendas PriceSmart reportando 1,467 unidades en exhibición para seis referencias del portafolio. El análisis revela patrones claros de concentración geográfica, diferencias significativas entre plazas y oportunidades de crecimiento.</p>
+  <p class="lead">En 26 días de operación (6–31 marzo), siete promotoras cubrieron cuatro tiendas PriceSmart registrando 1,813 unidades vendidas en seis referencias del portafolio. El mes inicia en Cali, se expande a Pereira el 20 de marzo y Barranquilla se incorpora el 28 de marzo como plaza nueva con los niveles de venta más altos por visita.</p>
   <div class="story-grid">
-    <div class="sc blue"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg></div><h4>Cañasgordas concentra el 43.6% del total</h4><p>Con 640 unidades, PriceSmart Cañasgordas es la plaza de mayor volumen. Viviana Vásquez y Marcela Gómez operan esta tienda de forma conjunta, con 11 y 5 visitas respectivamente.</p></div>
-    <div class="sc amber"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h4>Caída sostenida en Cali semana a semana</h4><p>Los registros del 7–9 de marzo acumulan niveles máximos. A partir del día 10 la tendencia es descendente, indicando posible agotamiento de exhibición sin reposición oportuna.</p></div>
-    <div class="sc green"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h4>Pereira: nicho diferenciado con mix único</h4><p>Única plaza que registra Frijoles Negros Refritos (61 unidades totales). Yina Moreno inicia el 20 de marzo con indicadores sólidos y un perfil de consumidor distinto al de Cali.</p></div>
-    <div class="sc red"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><h4>Bucaramanga sin continuidad de cobertura</h4><p>Solo un registro disponible (6 de marzo, 135 unidades). La ausencia total de seguimiento posterior genera un vacío analítico. La plaza tiene potencial pero carece de datos continuos.</p></div>
-    <div class="sc blue"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h4>Tostada Azul: SKU estratégico en Pereira</h4><p>En el acumulado de Pereira, la Tostada Azul representa el 17.4% del mix (41 unidades en 7 días). En Cali su participación es del 10%. El producto muestra mayor resonancia en mercados secundarios.</p></div>
-    <div class="sc green"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h4>Viviana Vásquez: líder de volumen</h4><p>Con 437 unidades en 11 registros (promedio 39.7 por visita), es la promotora con mayor volumen total. Andrea Ñuscue le sigue con 398 uds en 9 registros (44.2 promedio), el mayor ratio por visita.</p></div>
+    <div class="sc blue"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg></div><h4>Cañasgordas sigue siendo la plaza líder</h4><p>Con 640 unidades en 14 visitas (45.7 uds/visita), PriceSmart Cañasgordas concentra el 35.3% del total. Viviana Vásquez y Marcela Gómez operan esta tienda con niveles sostenidos.</p></div>
+    <div class="sc green"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h4>Barranquilla: entrada con el mayor ratio por visita</h4><p>Con solo 6 visitas (28–31 marzo), Yadina y Daniela registran 298 unidades y el promedio más alto: 49.7 uds/visita. Tostada Azul tiene 31.5% de participación.</p></div>
+    <div class="sc amber"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h4>Pereira: recuperación notable en la última semana</h4><p>Tras caída del 22 al 25 de marzo, Pereira rebota el 28–29 con 70 y 89 unidades diarias, los días de mayor volumen de la red.</p></div>
+    <div class="sc red"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><h4>Menga: menor ratio por visita de la red</h4><p>Con 457 unidades en 14 visitas (32.6 uds/visita), Menga tiene el índice más bajo. Andrea Ñuscue y Luz Marina muestran caída progresiva.</p></div>
+    <div class="sc blue"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h4>Tostada Azul: SKU de alto dinamismo en nuevas plazas</h4><p>Pasa del 10–11% en Cali al 31.5% en Barranquilla y 19.1% en Pereira. Mayor penetración en mercados que recién inician contacto.</p></div>
+    <div class="sc green"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h4>Daniela Calva: mayor ratio individual de la red</h4><p>Con 162 unidades en 3 visitas (54.0 uds/visita), Daniela es la promotora con el promedio más alto. Le sigue Viviana con 48.6 uds/visita.</p></div>
   </div>
 </section>
 
@@ -222,16 +210,16 @@ footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template
   <span class="sec-num">02</span>
   <div class="eyebrow">02 — Indicadores Clave de Desempeño</div>
   <h2>RESUMEN<br><em>EJECUTIVO</em></h2>
-  <p class="lead">Métricas consolidadas del periodo. Total validado: 1,467 unidades sobre 36 registros en 4 puntos de venta.</p>
+  <p class="lead">Métricas consolidadas del periodo. Total validado: 1,813 unidades sobre 44 registros en 4 puntos de venta y 7 promotoras.</p>
   <div class="kpi-grid">
-    <div class="kpi hi"><div class="k-val accent">1,467</div><div class="k-label">Unidades totales</div><div class="k-sub">Validado registro a registro</div></div>
-    <div class="kpi"><div class="k-val">36</div><div class="k-label">Registros del periodo</div><div class="k-sub">6 marzo — 26 marzo 2026</div></div>
-    <div class="kpi"><div class="k-val">40.7</div><div class="k-label">Uds promedio por visita</div><div class="k-sub">Densidad media de exhibición</div></div>
-    <div class="kpi hi"><div class="k-val accent">462</div><div class="k-label">Frijoles Bayos Refritos</div><div class="k-sub">31.5% del total — producto líder</div></div>
-    <div class="kpi"><div class="k-val">437</div><div class="k-label">Viviana Vásquez</div><div class="k-sub">Mayor volumen — 11 visitas</div></div>
-    <div class="kpi ok"><div class="k-val">640</div><div class="k-label">PriceSmart Cañasgordas</div><div class="k-sub">Plaza líder — 43.6% del total</div></div>
-    <div class="kpi"><div class="k-val">61</div><div class="k-label">Frijoles Negros</div><div class="k-sub">Exclusivo Pereira — 4.2%</div></div>
-    <div class="kpi"><div class="k-val">44.2</div><div class="k-label">Mejor ratio por visita</div><div class="k-sub">Andrea Ñuscue — 398 / 9 visitas</div></div>
+    <div class="kpi hi"><div class="k-val accent">1,813</div><div class="k-label">Ventas totales</div><div class="k-sub">Validado registro a registro</div></div>
+    <div class="kpi"><div class="k-val">44</div><div class="k-label">Registros del periodo</div><div class="k-sub">6 marzo — 31 marzo 2026</div></div>
+    <div class="kpi"><div class="k-val">41.2</div><div class="k-label">Uds promedio por visita</div><div class="k-sub">Densidad media de piso</div></div>
+    <div class="kpi hi"><div class="k-val accent">502</div><div class="k-label">Frijoles Bayos Refritos</div><div class="k-sub">27.7% del total — producto líder</div></div>
+    <div class="kpi"><div class="k-val">437</div><div class="k-label">Viviana Vásquez</div><div class="k-sub">Mayor volumen — 9 visitas</div></div>
+    <div class="kpi ok"><div class="k-val">640</div><div class="k-label">PriceSmart Cañasgordas</div><div class="k-sub">Plaza líder — 35.3% del total</div></div>
+    <div class="kpi"><div class="k-val">298</div><div class="k-label">PriceSmart Barranquilla</div><div class="k-sub">Nueva plaza · 49.7 uds/visita</div></div>
+    <div class="kpi"><div class="k-val">54.0</div><div class="k-label">Mejor ratio por visita</div><div class="k-sub">Daniela Calva — 162 / 3 visitas</div></div>
   </div>
 </section>
 
@@ -240,21 +228,16 @@ footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template
   <span class="sec-num">03</span>
   <div class="eyebrow">03 — Análisis por Promotora</div>
   <h2>RENDIMIENTO<br><em>PROMOTORAS</em></h2>
-  <p class="lead">Comparativo de las cinco promotoras por volumen total, frecuencia de visita y mix de producto registrado en piso.</p>
+  <p class="lead">Comparativo de las siete promotoras por volumen total de ventas, frecuencia de visita y mix de producto registrado en piso.</p>
   <div class="charts-2">
-    <div class="chart-card"><div class="chart-title">Volumen total por promotora (unidades)</div><div class="chart-wrap"><canvas id="cPromoBar" height="260"></canvas></div></div>
-    <div class="chart-card"><div class="chart-title">Composición de producto por promotora (unidades absolutas)</div><div class="chart-wrap"><canvas id="cPromoStack" height="260"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Ventas totales por promotora (unidades)</div><div class="chart-wrap"><canvas id="cPromoBar" height="280"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Composición de producto por promotora (unidades absolutas)</div><div class="chart-wrap"><canvas id="cPromoStack" height="280"></canvas></div></div>
   </div>
   <div class="charts-2" style="margin-top:20px">
-    <div class="chart-card"><div class="chart-title">Promedio de unidades por visita</div><div class="chart-wrap"><canvas id="cPromoAvg" height="220"></canvas></div></div>
-    <div class="chart-card"><div class="chart-title">Distribución porcentual del portafolio por promotora</div><div class="chart-wrap"><canvas id="cPromoRadar" height="220"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Promedio de ventas por visita (uds/visita)</div><div class="chart-wrap"><canvas id="cPromoAvg" height="240"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Distribución porcentual del portafolio por promotora</div><div class="chart-wrap"><canvas id="cPromoRadar" height="240"></canvas></div></div>
   </div>
-  <div class="tbl-wrap"><table><thead><tr>
-    <th onclick="sortT('tPromo',0)">Promotora</th><th onclick="sortT('tPromo',1)">Tienda(s)</th><th onclick="sortT('tPromo',2)">Registros</th>
-    <th onclick="sortT('tPromo',3)">Bayos</th><th onclick="sortT('tPromo',4)">Negros</th><th onclick="sortT('tPromo',5)">Hab. Mol.</th>
-    <th onclick="sortT('tPromo',6)">Jal. Hab.</th><th onclick="sortT('tPromo',7)">Jal. Mol.</th><th onclick="sortT('tPromo',8)">Tost. Azul</th>
-    <th onclick="sortT('tPromo',9)">Total</th><th onclick="sortT('tPromo',10)">Prom/visita</th>
-  </tr></thead><tbody id="tPromo"></tbody></table></div>
+  <div class="tbl-wrap"><table id="promoTable"><thead><tr><th onclick="sortTable('promoTable',0)">Promotora</th><th onclick="sortTable('promoTable',1)">Tienda(s)</th><th onclick="sortTable('promoTable',2)">Visitas</th><th onclick="sortTable('promoTable',3)">Bayos</th><th onclick="sortTable('promoTable',4)">Negros</th><th onclick="sortTable('promoTable',5)">Hab. Mol.</th><th onclick="sortTable('promoTable',6)">Jal. Hab.</th><th onclick="sortTable('promoTable',7)">Jal. Mol.</th><th onclick="sortTable('promoTable',8)">Tost. Azul</th><th onclick="sortTable('promoTable',9)">Total</th><th onclick="sortTable('promoTable',10)">Prom/visita</th></tr></thead><tbody id="tPromo"></tbody></table></div>
 </section>
 
 <div class="divider"></div>
@@ -264,20 +247,16 @@ footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template
   <span class="sec-num">04</span>
   <div class="eyebrow">04 — Comparativo de Plazas</div>
   <h2>ANÁLISIS<br><em>POR PLAZA</em></h2>
-  <p class="lead">Cada tienda PriceSmart presenta un perfil de exhibición diferente. El volumen, la densidad por visita y el mix de producto varían significativamente entre puntos de venta.</p>
+  <p class="lead">Cada tienda PriceSmart presenta un perfil de ventas diferente. El volumen, la densidad por visita y el mix de producto varían significativamente entre puntos de venta.</p>
   <div class="charts-2">
-    <div class="chart-card"><div class="chart-title">Volumen total por tienda (unidades absolutas)</div><div class="chart-wrap"><canvas id="cPdvBar" height="250"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Ventas totales por tienda (unidades absolutas)</div><div class="chart-wrap"><canvas id="cPdvBar" height="250"></canvas></div></div>
     <div class="chart-card"><div class="chart-title">Participación porcentual por referencia en cada tienda</div><div class="chart-wrap"><canvas id="cPdvMix" height="250"></canvas></div></div>
   </div>
   <div class="charts-2" style="margin-top:20px">
     <div class="chart-card"><div class="chart-title">Comparativo de referencias por tienda — Radar</div><div class="chart-wrap"><canvas id="cPdvRadar" height="260"></canvas></div></div>
-    <div class="chart-card"><div class="chart-title">Promedio de unidades por visita por tienda</div><div class="chart-wrap"><canvas id="cPdvAvg" height="260"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Promedio de ventas por visita por tienda</div><div class="chart-wrap"><canvas id="cPdvAvg" height="260"></canvas></div></div>
   </div>
-  <div class="tbl-wrap"><table><thead><tr>
-    <th onclick="sortT('tPdv',0)">Tienda</th><th onclick="sortT('tPdv',1)">Ciudad</th><th onclick="sortT('tPdv',2)">Promotoras</th><th onclick="sortT('tPdv',3)">Registros</th>
-    <th onclick="sortT('tPdv',4)">Bayos</th><th onclick="sortT('tPdv',5)">Negros</th><th onclick="sortT('tPdv',6)">Hab. Mol.</th>
-    <th onclick="sortT('tPdv',7)">Jalapeños</th><th onclick="sortT('tPdv',8)">Tost. Azul</th><th onclick="sortT('tPdv',9)">Total</th><th onclick="sortT('tPdv',10)">Prom/visita</th>
-  </tr></thead><tbody id="tPdv"></tbody></table></div>
+  <div class="tbl-wrap"><table id="pdvTable"><thead><tr><th onclick="sortTable('pdvTable',0)">Tienda</th><th onclick="sortTable('pdvTable',1)">Ciudad</th><th onclick="sortTable('pdvTable',2)">Promotoras</th><th onclick="sortTable('pdvTable',3)">Visitas</th><th onclick="sortTable('pdvTable',4)">Bayos</th><th onclick="sortTable('pdvTable',5)">Negros</th><th onclick="sortTable('pdvTable',6)">Hab. Mol.</th><th onclick="sortTable('pdvTable',7)">Jalapeños</th><th onclick="sortTable('pdvTable',8)">Tost. Azul</th><th onclick="sortTable('pdvTable',9)">Total</th><th onclick="sortTable('pdvTable',10)">Prom/visita</th></tr></thead><tbody id="tPdv"></tbody></table></div>
 </section>
 
 <!-- 05 PRODUCTOS -->
@@ -290,7 +269,7 @@ footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template
   <div class="charts-3" style="margin-top:28px">
     <div class="chart-card"><div class="chart-title">Participación por referencia (% del total)</div><div class="chart-wrap"><canvas id="cDona" height="300"></canvas></div></div>
     <div class="chart-card"><div class="chart-title">Volumen por referencia — Cañasgordas vs Menga</div><div class="chart-wrap"><canvas id="cCompare" height="300"></canvas></div></div>
-    <div class="chart-card"><div class="chart-title">Perfil de producto — Pereira vs Cali total</div><div class="chart-wrap"><canvas id="cPolarPereira" height="300"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Perfil de producto — Barranquilla vs Pereira</div><div class="chart-wrap"><canvas id="cPolarBaq" height="300"></canvas></div></div>
   </div>
 </section>
 
@@ -299,21 +278,27 @@ footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template
 <!-- 06 TENDENCIAS -->
 <section id="tendencias" class="alt fade-in">
   <span class="sec-num">06</span>
-  <div class="eyebrow">06 — Evolución Temporal</div>
-  <h2>TENDENCIAS<br><em>DE PISO</em></h2>
-  <p class="lead">Evolución diaria de unidades en exhibición. Filtra por promotora para ver la curva individual y detectar patrones de reposición.</p>
+  <div class="eyebrow">06 — Evolución Temporal de Ventas</div>
+  <h2>TENDENCIAS<br><em>DE VENTAS</em></h2>
+  <p class="lead">Evolución diaria de unidades vendidas en piso a lo largo del mes. Las fechas se leen de izquierda (inicio del mes) a derecha (final del mes). Filtra por promotora para ver la curva individual.</p>
   <div class="tab-bar" id="tabsTend">
     <button class="tab active" data-f="all">Todas</button>
-    <button class="tab" data-f="Andrea Ñuscue">Andrea</button>
     <button class="tab" data-f="Viviana Vásquez">Viviana</button>
+    <button class="tab" data-f="Andrea Ñuscue">Andrea</button>
     <button class="tab" data-f="Luz Marina Sánchez">Luz Marina</button>
     <button class="tab" data-f="Marcela Gómez">Marcela</button>
     <button class="tab" data-f="Yina Moreno Martinez">Yina</button>
+    <button class="tab" data-f="Yadina Villanueva">Yadina</button>
+    <button class="tab" data-f="Daniela Andrea Calva Corena">Daniela</button>
   </div>
-  <div class="chart-card"><div class="chart-title">Unidades totales diarias en piso</div><div class="chart-wrap"><canvas id="cTend" height="210"></canvas></div></div>
+  <div class="chart-card"><div class="chart-title">Ventas totales diarias en piso — tendencia izquierda a derecha</div><div class="chart-wrap"><canvas id="cTend" height="210"></canvas></div></div>
   <div class="charts-2" style="margin-top:20px">
-    <div class="chart-card"><div class="chart-title">Evolución diaria Cali — todas las referencias</div><div class="chart-wrap"><canvas id="cLineProd" height="240"></canvas></div></div>
-    <div class="chart-card"><div class="chart-title">Evolución diaria Pereira — todas las referencias</div><div class="chart-wrap"><canvas id="cLinePereira" height="240"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Tendencia diaria Cali (Cañasgordas + Menga) — todas las referencias</div><div class="chart-wrap"><canvas id="cLineProd" height="240"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Tendencia diaria Pereira — todas las referencias</div><div class="chart-wrap"><canvas id="cLinePereira" height="240"></canvas></div></div>
+  </div>
+  <div class="charts-2" style="margin-top:20px">
+    <div class="chart-card"><div class="chart-title">Tendencia diaria Barranquilla — todas las referencias</div><div class="chart-wrap"><canvas id="cLineBaq" height="240"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Comparativo de ventas diarias por plaza</div><div class="chart-wrap"><canvas id="cLinePlaza" height="240"></canvas></div></div>
   </div>
 </section>
 
@@ -322,7 +307,7 @@ footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template
   <span class="sec-num">07</span>
   <div class="eyebrow">07 — Mapa de Calor</div>
   <h2>INTENSIDAD<br><em>TIENDA × PRODUCTO</em></h2>
-  <p class="lead">Cruce de volumen acumulado por tienda y referencia. La intensidad del color refleja el peso relativo de cada celda respecto al máximo de la red.</p>
+  <p class="lead">Cruce de ventas acumuladas por tienda y referencia. La intensidad del color refleja el peso relativo de cada celda respecto al máximo de la red.</p>
   <div class="hm-wrap"><div class="hm-grid" id="hmGrid"></div></div>
 </section>
 
@@ -335,12 +320,12 @@ footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template
   <h2>ANÁLISIS DE<br><em>NICHO Y MERCADO</em></h2>
   <p class="lead">Contexto de mercado para cada referencia del portafolio: categoría, competidores, tendencias de consumo y oportunidades de posicionamiento en Colombia.</p>
   <div class="market-blocks">
-    <div class="mb"><div class="mb-head"><h4>Frijoles Bayos Refritos</h4><p>Referencia líder · 31.5% del portafolio</p></div><div class="mb-body"><p>Los frijoles bayos refritos son un segmento de nicho en Colombia, donde el consumo tradicional prefiere variedades cargamanto o bola roja. El formato "refrito" es más penetrado en la franja del pacífico y en consumidores con exposición a gastronomía internacional.</p><ul><li>Principal competidor en anaquel: marcas importadas de frijol enlatado tipo Bush's y La Preferida</li><li>Oportunidad: posicionamiento como sustituto premium en recetas de cocina fusión</li><li>El canal club warehouse (PriceSmart) favorece compra por volumen — alinea con formato del empaque</li><li>Tendencia de alza en Colombia: +12% en ventas de productos latinos importados 2024–2025</li></ul></div></div>
-    <div class="mb"><div class="mb-head"><h4>Frijoles Negros Refritos</h4><p>Nicho diferenciado · Exclusivo Pereira</p></div><div class="mb-body"><p>El frijol negro refrito tiene mayor reconocimiento en ciudades con influencia caribeña o con comunidades extranjeras. Su presencia exclusiva en Pereira plantea una pregunta estratégica: ¿es una decisión de surtido de la tienda o una demanda orgánica del consumidor?</p><ul><li>Consumidor objetivo: familias con conocimiento de cocina mexicana/cubana o viajeros frecuentes</li><li>Ausencia en Cali: oportunidad de prueba piloto dado el perfil cosmopolita de la ciudad</li><li>Formato refrito reduce la barrera de preparación — ventaja sobre frijol negro seco</li><li>Potencial de extensión a PriceSmart Bogotá y Medellín como próximas plazas de entrada</li></ul></div></div>
-    <div class="mb"><div class="mb-head"><h4>Habaneros Molidos</h4><p>Segunda referencia · 22.4% del portafolio</p></div><div class="mb-body"><p>El mercado colombiano de salsas picantes está en expansión, impulsado por la popularización de la cocina mexicana. Los habaneros molidos ocupan un segmento premium en la escala de picor, diferenciándose de jalapeños por su perfil aromático.</p><ul><li>Categoría de salsas picantes en Colombia creció ~18% en volumen entre 2023 y 2025</li><li>Competidores directos: Cholula Habanero, Valentina, Búfalo — todas de origen mexicano</li><li>Ventaja de credibilidad en el segmento "auténtico" frente a imitaciones locales</li><li>Canal PriceSmart ideal para el consumidor que busca productos de gastronomía internacional</li></ul></div></div>
-    <div class="mb"><div class="mb-head"><h4>Jalapeños (Habaneros + Molidos)</h4><p>Doble referencia · 30.6% combinado</p></div><div class="mb-body"><p>Las dos referencias de jalapeño representan juntas 449 unidades. Tienen alta penetración en el consumidor colombiano joven y en hogares con hábitos de cocina internacional. Su distribución por tienda es irregular.</p><ul><li>Jalapeños Habaneros (237 uds): mejor desempeño en Cañasgordas y Bucaramanga</li><li>Jalapeños Molidos (212 uds): perfil de uso más orientado a condimento en preparaciones</li><li>Competencia: La Costeña, Embasa, Old El Paso — mayor distribución masiva</li><li>Diferenciación por autenticidad y presentación premium</li></ul></div></div>
-    <div class="mb"><div class="mb-head"><h4>Tostada Azul</h4><p>Referencia de nicho · 11.3% del portafolio</p></div><div class="mb-body"><p>La Tostada Azul tiene el perfil de consumidor más diferenciado. El maíz azul es un ingrediente de alto valor percibido, asociado a autenticidad mesoamericana, nicho saludable y gastronomía de tendencia.</p><ul><li>Segmento: snack premium, cocina de tendencia, dieta consciente</li><li>Competidores: Tostitos Blue Corn (Frito-Lay), Late July — mayor presencia en comercio especializado</li><li>Oportunidad clara en Menga donde el acumulado es muy bajo vs Cañasgordas</li><li>Tendencia global: maíz azul y tortilla chips premium con crecimiento de doble dígito en Latinoamérica</li></ul></div></div>
-    <div class="mb"><div class="mb-head"><h4>PriceSmart Colombia — Contexto Canal</h4><p>Club warehouse · Socio-afiliado · Formato diferenciado</p></div><div class="mb-body"><p>PriceSmart opera bajo el modelo club membership, atendiendo un consumidor de ingreso medio-alto con alta frecuencia de compra por volumen. Este perfil es ideal para productos importados de nicho que en el canal masivo no tendrían rotación suficiente.</p><ul><li>Ciudades activas Colombia (2026): Bogotá, Cali, Medellín, Barranquilla, Bucaramanga, Pereira</li><li>El consumidor PriceSmart tiene mayor exposición a marcas internacionales y cocinas del mundo</li><li>Las promotoras son el principal driver de conversión en categorías nuevas</li><li>Oportunidad: ampliar cobertura a Bogotá y Medellín con las mismas promotoras capacitadas</li></ul></div></div>
+    <div class="mb"><div class="mb-head"><h4>Frijoles Bayos Refritos</h4><p>Referencia líder · 27.7% del portafolio</p></div><div class="mb-body"><p>Los frijoles bayos refritos son un segmento de nicho en Colombia. El formato "refrito" es más penetrado en la franja del pacífico y en consumidores con exposición a gastronomía internacional.</p><ul><li>Principal competidor: marcas importadas tipo Bush's y La Preferida</li><li>Oportunidad: posicionamiento como sustituto premium en cocina fusión</li><li>Canal club warehouse favorece compra por volumen</li></ul></div></div>
+    <div class="mb"><div class="mb-head"><h4>Frijoles Negros Refritos</h4><p>Nicho diferenciado · 6.2% — mayor rotación en Pereira y Barranquilla</p></div><div class="mb-body"><p>El frijol negro refrito tiene mayor reconocimiento en ciudades con influencia caribeña. Su presencia fuerte en Barranquilla (41 uds) y Pereira (113 uds) es coherente con el perfil de consumidor costeño y de interior.</p><ul><li>Consumidor objetivo: familias con cocina mexicana/cubana</li><li>Ausencia en Cali: oportunidad de prueba piloto</li><li>Formato refrito reduce barrera de preparación</li></ul></div></div>
+    <div class="mb"><div class="mb-head"><h4>Habaneros Molidos</h4><p>Segunda referencia · 20.2% del portafolio</p></div><div class="mb-body"><p>El mercado colombiano de salsas picantes está en expansión. Los habaneros molidos ocupan un segmento premium diferenciándose de jalapeños por su perfil aromático más intenso.</p><ul><li>Categoría de salsas picantes creció ~18% en volumen 2023–2025</li><li>Competidores directos: Cholula Habanero, Valentina</li><li>Ventaja de credibilidad en el segmento "auténtico"</li></ul></div></div>
+    <div class="mb"><div class="mb-head"><h4>Jalapeños (Habaneros + Molidos)</h4><p>Doble referencia · 28.1% combinado</p></div><div class="mb-body"><p>Las dos referencias de jalapeño suman 510 unidades y tienen alta penetración en consumidores jóvenes con hábitos de cocina internacional.</p><ul><li>Jalapeños Habaneros (267 uds): mejor en Cañasgordas y Barranquilla</li><li>Jalapeños Molidos (243 uds): orientado a condimento</li><li>Diferenciación por autenticidad y presentación premium</li></ul></div></div>
+    <div class="mb"><div class="mb-head"><h4>Tostada Azul</h4><p>Referencia de mayor crecimiento · 17.8% — 31.5% en Barranquilla</p></div><div class="mb-body"><p>La Tostada Azul es el producto de más alto rendimiento proporcional en plazas nuevas. En Barranquilla representa el 31.5% del mix — el indicador más claro de que el producto funciona al impulso en primera exposición.</p><ul><li>Segmento: snack premium, cocina de tendencia</li><li>Competidores: Tostitos Blue Corn, Late July</li><li>Tendencia global: maíz azul con crecimiento de doble dígito en Latam</li></ul></div></div>
+    <div class="mb"><div class="mb-head"><h4>PriceSmart Colombia — Contexto Canal</h4><p>Club warehouse · Socio-afiliado · Formato diferenciado</p></div><div class="mb-body"><p>PriceSmart opera bajo el modelo club membership, atendiendo un consumidor de ingreso medio-alto. Este perfil es ideal para productos importados de nicho que en el canal masivo no tendrían rotación suficiente.</p><ul><li>Ciudades activas (marzo 2026): Cali (2 tiendas), Pereira, Barranquilla</li><li>El consumidor PriceSmart tiene mayor exposición a marcas internacionales</li><li>Las promotoras son el principal driver de conversión en categorías nuevas</li></ul></div></div>
   </div>
 </section>
 
@@ -349,14 +334,14 @@ footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template
   <span class="sec-num">09</span>
   <div class="eyebrow">09 — Conclusiones Estratégicas</div>
   <h2>RECOMENDACIONES<br><em>DE ACCIÓN</em></h2>
-  <p class="lead">Acciones derivadas directamente del análisis de datos de campo y el contexto de mercado. Priorizadas por urgencia e impacto.</p>
+  <p class="lead">Acciones derivadas directamente del análisis de ventas de campo. Priorizadas por urgencia e impacto sobre el volumen.</p>
   <div class="story-grid">
-    <div class="sc amber"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg></div><h4>Establecer alerta de mínimo de inventario — Cañasgordas</h4><p>La caída del 7 al 15 de marzo indica que el ritmo de ventas supera la velocidad de reposición. Se recomienda definir un umbral mínimo de 10 unidades por referencia para activar reorden automático.</p></div>
-    <div class="sc green"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 8 12 12 14 14"/></svg></div><h4>Ampliar cobertura de Pereira antes del 5 de abril</h4><p>Yina Moreno inicia con niveles altos y cae hacia el 25 de marzo. La curva replica el patrón de Cali. Reforzar la reposición y aumentar la frecuencia de visita a 5 días/semana puede estabilizar el piso.</p></div>
-    <div class="sc blue"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h4>Recuperar cobertura en Bucaramanga</h4><p>Un solo registro en toda la sede no permite análisis de tendencia. Se recomienda asignar una promotora dedicada con reporte diario durante al menos 15 días para establecer una línea base.</p></div>
-    <div class="sc red"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h4>Piloto de Frijoles Negros en Menga y Cañasgordas</h4><p>La exclusividad del Frijol Negro en Pereira es una limitante sin justificación evidente. Un piloto de 30 días en Menga y Cañasgordas con material POP permitirá medir la demanda potencial en Cali.</p></div>
-    <div class="sc blue"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><h4>Activar Tostada Azul con degustación en PriceSmart Menga</h4><p>La Tostada Azul tiene solo 37 unidades en Menga vs 109 en Cañasgordas. Una jornada de degustación con receta (guacamole + tostada) puede generar un efecto multiplicador en el consumidor de Menga.</p></div>
-    <div class="sc amber"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h4>Concentrar actividades de impulso días 6–9 de cada mes</h4><p>Los picos de inventario se registran consistentemente en los primeros 9 días del mes, correlacionando con el ciclo de compra del socio PriceSmart. Programar degustaciones en esa ventana puede maximizar la conversión.</p></div>
+    <div class="sc green"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h4>Consolidar Barranquilla: aumentar frecuencia de visita</h4><p>Con 49.7 uds/visita en solo 6 registros, Barranquilla muestra el mejor ratio. Aumentar la frecuencia a visitas diarias durante abril puede consolidar una línea base sólida.</p></div>
+    <div class="sc amber"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg></div><h4>Reposición anticipada en Cañasgordas</h4><p>Los datos muestran caída del volumen por visita. Se recomienda definir un umbral mínimo de 10 unidades por referencia para activar reorden.</p></div>
+    <div class="sc blue"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 8 12 12 14 14"/></svg></div><h4>Sostener el rebote de Pereira en abril</h4><p>El fuerte repunte del 28–29 de marzo (70 y 89 uds) indica que Pereira tiene capacidad de venta alta. Mantener cobertura diaria con reposición oportuna.</p></div>
+    <div class="sc red"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h4>Activar Frijoles Negros en Cali</h4><p>Frijoles Negros: 0 unidades en Cali vs 154 en Pereira y Barranquilla. Un piloto de 30 días con material POP puede validar el potencial.</p></div>
+    <div class="sc blue"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><h4>Potenciar Tostada Azul con degustación en Menga</h4><p>Tostada Azul tiene solo 10% del mix en Menga vs 31.5% en Barranquilla. Degustación con guacamole puede generar el efecto multiplicador.</p></div>
+    <div class="sc amber"><div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h4>Concentrar degustaciones en los primeros días del mes</h4><p>Los picos de ventas se registran consistentemente en los primeros días del mes (7 de marzo: 178 uds), correlacionando con el ciclo de compra del socio.</p></div>
   </div>
 </section>
 
@@ -367,20 +352,15 @@ footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template
   <span class="sec-num">10</span>
   <div class="eyebrow">10 — Datos Detallados</div>
   <h2>TABLA<br><em>MAESTRA</em></h2>
-  <p class="lead">Todos los registros del periodo. Filtra por tienda o haz clic en los encabezados para ordenar.</p>
+  <p class="lead">Todos los registros de ventas del periodo, ordenados cronológicamente de izquierda a derecha (fecha más antigua a la izquierda, más reciente a la derecha). Filtra por tienda o haz clic en los encabezados para ordenar.</p>
   <div class="tab-bar" id="tabsRaw">
     <button class="tab active" data-r="all">Todos</button>
-    <button class="tab" data-r="PriceSmart Bucaramanga">Bucaramanga</button>
+    <button class="tab" data-r="PriceSmart Barranquilla">Barranquilla</button>
     <button class="tab" data-r="PriceSmart Cañasgordas">Cañasgordas</button>
     <button class="tab" data-r="PriceSmart Menga">Menga</button>
     <button class="tab" data-r="PriceSmart Pereira">Pereira</button>
   </div>
-  <div class="tbl-wrap"><table id="rawTable"><thead><tr>
-    <th onclick="sortT('rawTable',0)">Fecha</th><th onclick="sortT('rawTable',1)">Promotora</th><th onclick="sortT('rawTable',2)">Tienda</th>
-    <th onclick="sortT('rawTable',3)">Bayos</th><th onclick="sortT('rawTable',4)">Negros</th><th onclick="sortT('rawTable',5)">Hab. Mol.</th>
-    <th onclick="sortT('rawTable',6)">Jal. Hab.</th><th onclick="sortT('rawTable',7)">Jal. Mol.</th><th onclick="sortT('rawTable',8)">Tost. Azul</th>
-    <th onclick="sortT('rawTable',9)">Total</th>
-  </tr></thead><tbody id="rawBody"></tbody></table></div>
+  <div class="tbl-wrap"><table id="rawTable"><thead><tr><th onclick="sortTable('rawTable',0)">Fecha</th><th onclick="sortTable('rawTable',1)">Promotora</th><th onclick="sortTable('rawTable',2)">Tienda</th><th onclick="sortTable('rawTable',3)">Bayos</th><th onclick="sortTable('rawTable',4)">Negros</th><th onclick="sortTable('rawTable',5)">Hab. Mol.</th><th onclick="sortTable('rawTable',6)">Jal. Hab.</th><th onclick="sortTable('rawTable',7)">Jal. Mol.</th><th onclick="sortTable('rawTable',8)">Tost. Azul</th><th onclick="sortTable('rawTable',9)">Total</th></tr></thead><tbody id="rawBody"></tbody></table></div>
 </section>
 
 <footer>
@@ -388,323 +368,254 @@ footer{background:var(--c-navy);padding:56px 5vw 40px;display:grid;grid-template
     <div class="f-logo">Portafolio <span>·</span> PriceSmart</div>
     <div class="f-text">Reporte de inteligencia comercial<br>Periodo: Marzo 2026 · Colombia</div>
   </div>
-  <div class="f-col"><h5>Plazas cubiertas</h5><p>PriceSmart Bucaramanga<br>PriceSmart Cañasgordas (Cali)<br>PriceSmart Menga (Cali)<br>PriceSmart Pereira</p></div>
+  <div class="f-col"><h5>Plazas cubiertas</h5><p>PriceSmart Cañasgordas (Cali)<br>PriceSmart Menga (Cali)<br>PriceSmart Pereira<br>PriceSmart Barranquilla</p></div>
   <div class="f-col"><h5>Portafolio analizado</h5><p>Frijoles Bayos Refritos<br>Frijoles Negros Refritos<br>Habaneros Molidos · Jalapeños<br>Tostada Azul</p></div>
-  <div class="f-bottom">REPORTE COMERCIAL © 2026 &nbsp;·&nbsp; ANÁLISIS BASADO EN DATOS DE CAMPO &nbsp;·&nbsp; 1,467 UNIDADES VALIDADAS</div>
+  <div class="f-bottom">REPORTE COMERCIAL © 2026 &nbsp;·&nbsp; ANÁLISIS BASADO EN DATOS DE CAMPO &nbsp;·&nbsp; 1,813 UNIDADES VALIDADAS</div>
 </footer>
 
 <script>
 Chart.register(ChartDataLabels);
 
-const D=[
-  {f:"06/03",n:"Andrea Ñuscue",p:"PriceSmart Bucaramanga",c:"Bucaramanga",b:30,ne:15,hm:30,jh:30,jm:30,ta:0},
-  {f:"07/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:16,ne:0,hm:18,jh:18,jm:14,ta:8},
-  {f:"08/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:26,ne:0,hm:14,jh:6,jm:6,ta:6},
-  {f:"10/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:13,ne:0,hm:4,jh:10,jm:5,ta:1},
-  {f:"11/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:8,ne:0,hm:3,jh:3,jm:3,ta:0},
-  {f:"12/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:8,ne:0,hm:4,jh:4,jm:2,ta:1},
-  {f:"13/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:8,ne:0,hm:0,jh:6,jm:4,ta:0},
-  {f:"14/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:5,ne:0,hm:5,jh:3,jm:2,ta:1},
-  {f:"15/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:12,ne:0,hm:5,jh:2,jm:3,ta:6},
+// DATOS CORRECTOS - SIN BUCARAMANGA - TOTAL 1,813 UNIDADES
+const D = [
   {f:"06/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:12,ne:0,hm:12,jh:6,jm:6,ta:0},
   {f:"07/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:31,ne:0,hm:25,jh:14,jm:13,ta:21},
+  {f:"07/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:16,ne:0,hm:18,jh:18,jm:14,ta:8},
   {f:"08/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:26,ne:0,hm:15,jh:9,jm:10,ta:8},
+  {f:"08/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:26,ne:0,hm:14,jh:6,jm:6,ta:6},
   {f:"09/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:19,ne:0,hm:16,jh:1,jm:0,ta:2},
-  {f:"11/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:7,ne:0,hm:5,jh:4,jm:5,ta:0},
-  {f:"12/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:21,ne:0,hm:11,jh:7,jm:9,ta:4},
-  {f:"13/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:25,ne:0,hm:6,jh:3,jm:5,ta:10},
-  {f:"14/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:6,ne:0,hm:11,jh:11,jm:8,ta:7},
-  {f:"15/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:4,ne:0,hm:5,jh:5,jm:10,ta:2},
   {f:"09/03",n:"Luz Marina Sánchez",p:"PriceSmart Menga",c:"Cali",b:20,ne:0,hm:15,jh:5,jm:3,ta:9},
-  {f:"11/03",n:"Luz Marina Sánchez",p:"PriceSmart Menga",c:"Cali",b:12,ne:0,hm:8,jh:3,jm:5,ta:4},
-  {f:"12/03",n:"Luz Marina Sánchez",p:"PriceSmart Menga",c:"Cali",b:11,ne:0,hm:5,jh:4,jm:7,ta:2},
-  {f:"13/03",n:"Luz Marina Sánchez",p:"PriceSmart Menga",c:"Cali",b:17,ne:0,hm:6,jh:6,jm:4,ta:1},
-  {f:"14/03",n:"Luz Marina Sánchez",p:"PriceSmart Menga",c:"Cali",b:6,ne:0,hm:6,jh:4,jm:5,ta:4},
-  {f:"15/03",n:"Luz Marina Sánchez",p:"PriceSmart Menga",c:"Cali",b:10,ne:0,hm:4,jh:3,jm:1,ta:4},
+  {f:"10/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:13,ne:0,hm:4,jh:10,jm:5,ta:1},
   {f:"10/03",n:"Marcela Gómez",p:"PriceSmart Cañasgordas",c:"Cali",b:30,ne:0,hm:15,jh:10,jm:5,ta:0},
   {f:"11/03",n:"Marcela Gómez",p:"PriceSmart Cañasgordas",c:"Cali",b:7,ne:0,hm:4,jh:4,jm:1,ta:0},
+  {f:"11/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:8,ne:0,hm:3,jh:3,jm:3,ta:0},
+  {f:"11/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:7,ne:0,hm:5,jh:4,jm:5,ta:0},
+  {f:"11/03",n:"Luz Marina Sánchez",p:"PriceSmart Menga",c:"Cali",b:12,ne:0,hm:8,jh:3,jm:5,ta:4},
+  {f:"12/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:8,ne:0,hm:4,jh:4,jm:2,ta:1},
+  {f:"12/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:21,ne:0,hm:11,jh:7,jm:9,ta:4},
+  {f:"12/03",n:"Luz Marina Sánchez",p:"PriceSmart Menga",c:"Cali",b:11,ne:0,hm:5,jh:4,jm:7,ta:2},
+  {f:"13/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:8,ne:0,hm:0,jh:6,jm:4,ta:0},
   {f:"13/03",n:"Marcela Gómez",p:"PriceSmart Cañasgordas",c:"Cali",b:7,ne:0,hm:7,jh:14,jm:4,ta:6},
+  {f:"13/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:25,ne:0,hm:6,jh:3,jm:5,ta:10},
+  {f:"13/03",n:"Luz Marina Sánchez",p:"PriceSmart Menga",c:"Cali",b:17,ne:0,hm:6,jh:6,jm:4,ta:1},
+  {f:"14/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:5,ne:0,hm:5,jh:3,jm:2,ta:1},
   {f:"14/03",n:"Marcela Gómez",p:"PriceSmart Cañasgordas",c:"Cali",b:14,ne:0,hm:9,jh:4,jm:8,ta:6},
+  {f:"14/03",n:"Luz Marina Sánchez",p:"PriceSmart Menga",c:"Cali",b:6,ne:0,hm:6,jh:4,jm:5,ta:4},
+  {f:"14/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:6,ne:0,hm:11,jh:11,jm:8,ta:7},
   {f:"15/03",n:"Marcela Gómez",p:"PriceSmart Cañasgordas",c:"Cali",b:13,ne:0,hm:12,jh:7,jm:7,ta:9},
+  {f:"15/03",n:"Luz Marina Sánchez",p:"PriceSmart Menga",c:"Cali",b:10,ne:0,hm:4,jh:3,jm:1,ta:4},
+  {f:"15/03",n:"Andrea Ñuscue",p:"PriceSmart Menga",c:"Cali",b:12,ne:0,hm:5,jh:2,jm:3,ta:6},
+  {f:"15/03",n:"Viviana Vásquez",p:"PriceSmart Cañasgordas",c:"Cali",b:4,ne:0,hm:5,jh:5,jm:10,ta:2},
   {f:"20/03",n:"Yina Moreno Martinez",p:"PriceSmart Pereira",c:"Pereira",b:10,ne:15,hm:13,jh:4,jm:3,ta:6},
   {f:"21/03",n:"Yina Moreno Martinez",p:"PriceSmart Pereira",c:"Pereira",b:8,ne:12,hm:11,jh:8,jm:12,ta:6},
   {f:"22/03",n:"Yina Moreno Martinez",p:"PriceSmart Pereira",c:"Pereira",b:5,ne:5,hm:5,jh:5,jm:4,ta:2},
   {f:"23/03",n:"Yina Moreno Martinez",p:"PriceSmart Pereira",c:"Pereira",b:3,ne:7,hm:10,jh:5,jm:3,ta:6},
   {f:"24/03",n:"Yina Moreno Martinez",p:"PriceSmart Pereira",c:"Pereira",b:4,ne:3,hm:5,jh:3,jm:3,ta:6},
   {f:"25/03",n:"Yina Moreno Martinez",p:"PriceSmart Pereira",c:"Pereira",b:2,ne:1,hm:2,jh:2,jm:0,ta:10},
-  {f:"26/03",n:"Yina Moreno Martinez",p:"PriceSmart Pereira",c:"Pereira",b:6,ne:3,hm:3,jh:4,jm:2,ta:8}
+  {f:"26/03",n:"Yina Moreno Martinez",p:"PriceSmart Pereira",c:"Pereira",b:6,ne:3,hm:3,jh:4,jm:2,ta:8},
+  {f:"27/03",n:"Yina Moreno Martinez",p:"PriceSmart Pereira",c:"Pereira",b:6,ne:3,hm:2,jh:2,jm:3,ta:8},
+  {f:"28/03",n:"Yina Moreno Martinez",p:"PriceSmart Pereira",c:"Pereira",b:11,ne:11,hm:10,jh:7,jm:9,ta:22},
+  {f:"28/03",n:"Yadina Villanueva",p:"PriceSmart Barranquilla",c:"Barranquilla",b:8,ne:4,hm:5,jh:5,jm:8,ta:11},
+  {f:"28/03",n:"Daniela Andrea Calva Corena",p:"PriceSmart Barranquilla",c:"Barranquilla",b:3,ne:5,hm:4,jh:6,jm:4,ta:25},
+  {f:"29/03",n:"Yina Moreno Martinez",p:"PriceSmart Pereira",c:"Pereira",b:12,ne:12,hm:12,jh:12,jm:9,ta:32},
+  {f:"29/03",n:"Yadina Villanueva",p:"PriceSmart Barranquilla",c:"Barranquilla",b:7,ne:10,hm:5,jh:9,jm:6,ta:9},
+  {f:"29/03",n:"Daniela Andrea Calva Corena",p:"PriceSmart Barranquilla",c:"Barranquilla",b:8,ne:3,hm:8,jh:4,jm:4,ta:9},
+  {f:"30/03",n:"Daniela Andrea Calva Corena",p:"PriceSmart Barranquilla",c:"Barranquilla",b:10,ne:11,hm:14,jh:12,jm:11,ta:21},
+  {f:"31/03",n:"Yadina Villanueva",p:"PriceSmart Barranquilla",c:"Barranquilla",b:5,ne:8,hm:7,jh:3,jm:7,ta:19}
 ];
-D.forEach(d=>d.total=d.b+d.ne+d.hm+d.jh+d.jm+d.ta);
 
-const KEYS=["b","ne","hm","jh","jm","ta"];
-const LABELS=["Bayos","Negros","Hab.Mol.","Jal.Hab.","Jal.Mol.","Tost.Azul"];
-const FULL=["Frijoles Bayos Refritos","Frijoles Negros Refritos","Habaneros Molidos","Jalapeños Habaneros","Jalapeños Molidos","Tostada Azul"];
-const PAL=["#134B8B","#1F6DC8","#3D8EE0","#72B3F0","#A8CFF5","#D97706"];
-const PAL2=["#0B2545","#134B8B","#1F6DC8","#3D8EE0"];
+D.forEach(d=>d.total = d.b+d.ne+d.hm+d.jh+d.jm+d.ta);
 
-Chart.defaults.font.family="'Barlow',sans-serif";
-Chart.defaults.color="#2E5080";
-const GRID={color:"rgba(200,219,240,0.4)"};
-const AXES={x:{ticks:{color:"#6B8DB5"},grid:GRID},y:{ticks:{color:"#6B8DB5"},grid:GRID}};
+// Totales por producto
+const prodTot = {b:0,ne:0,hm:0,jh:0,jm:0,ta:0};
+D.forEach(d=>{prodTot.b+=d.b; prodTot.ne+=d.ne; prodTot.hm+=d.hm; prodTot.jh+=d.jh; prodTot.jm+=d.jm; prodTot.ta+=d.ta;});
+const GRAND = prodTot.b+prodTot.ne+prodTot.hm+prodTot.jh+prodTot.jm+prodTot.ta;
 
-// Shared datalabels for bar charts - show value above bar
-const DL_TOP={datalabels:{display:true,anchor:'end',align:'end',color:'#2E5080',font:{family:"'Barlow Semi Condensed',sans-serif",weight:'600',size:11},formatter:v=>v>0?v:''}};
-const DL_OFF={datalabels:{display:false}};
+const KEYS = ["b","ne","hm","jh","jm","ta"];
+const LABELS = ["Bayos","Negros","Hab.Mol.","Jal.Hab.","Jal.Mol.","Tost.Azul"];
+const FULL = ["Frijoles Bayos Refritos","Frijoles Negros Refritos","Habaneros Molidos","Jalapeños Habaneros","Jalapeños Molidos","Tostada Azul"];
+const PAL = ["#134B8B","#1F6DC8","#3D8EE0","#72B3F0","#A8CFF5","#D97706"];
 
-function byPromo(){
-  const m={};
-  D.forEach(d=>{if(!m[d.n])m[d.n]={n:d.n,reg:0,b:0,ne:0,hm:0,jh:0,jm:0,ta:0,total:0};m[d.n].reg++;KEYS.forEach(k=>m[d.n][k]+=d[k]);m[d.n].total+=d.total;});
-  return Object.values(m).sort((a,b)=>b.total-a.total);
-}
-function byPdv(){
-  const m={};
-  D.forEach(d=>{if(!m[d.p])m[d.p]={p:d.p,c:d.c,reg:0,b:0,ne:0,hm:0,jh:0,jm:0,ta:0,total:0,promos:new Set()};m[d.p].reg++;KEYS.forEach(k=>m[d.p][k]+=d[k]);m[d.p].total+=d.total;m[d.p].promos.add(d.n);});
-  return Object.values(m).sort((a,b)=>b.total-a.total);
-}
-
-const promos=byPromo(),pdvs=byPdv();
-const totK={b:0,ne:0,hm:0,jh:0,jm:0,ta:0};
-D.forEach(d=>KEYS.forEach(k=>totK[k]+=d[k]));
-const GRAND=Object.values(totK).reduce((a,b)=>a+b,0);
-
-// Chart: Promo bar
-new Chart("cPromoBar",{type:"bar",data:{
-  labels:promos.map(p=>p.n.split(" ")[0]+" "+p.n.split(" ")[1]),
-  datasets:[{label:"Total unidades",data:promos.map(p=>p.total),backgroundColor:PAL2,borderRadius:6,borderSkipped:false}]
-},options:{plugins:{legend:{display:false},...DL_TOP},scales:{...AXES,y:{...AXES.y,beginAtZero:true}}}});
-
-// Chart: Promo stack - show total on top
-new Chart("cPromoStack",{type:"bar",data:{
-  labels:promos.map(p=>p.n.split(" ")[0]),
-  datasets:KEYS.map((k,i)=>({label:LABELS[i],data:promos.map(p=>p[k]),backgroundColor:PAL[i],borderRadius:i===5?4:0}))
-},options:{plugins:{
-  legend:{position:"bottom",labels:{boxWidth:12,padding:10,font:{size:11}}},
-  datalabels:{display:ctx=>ctx.dataset.index===KEYS.length-1,anchor:'end',align:'end',
-    formatter:(v,ctx)=>KEYS.reduce((s,k)=>s+promos[ctx.dataIndex][k],0),
-    color:'#2E5080',font:{family:"'Barlow Semi Condensed',sans-serif",weight:'600',size:11}}
-},scales:{x:{stacked:true,ticks:{color:"#6B8DB5"},grid:GRID},y:{stacked:true,ticks:{color:"#6B8DB5"},grid:GRID}}}});
-
-// Chart: Promo avg
-new Chart("cPromoAvg",{type:"bar",data:{
-  labels:promos.map(p=>p.n.split(" ")[0]),
-  datasets:[{label:"Uds/visita",data:promos.map(p=>+(p.total/p.reg).toFixed(1)),backgroundColor:"#3D8EE0",borderRadius:6,borderSkipped:false}]
-},options:{plugins:{legend:{display:false},...DL_TOP},scales:{...AXES,y:{...AXES.y,beginAtZero:true}}}});
-
-// Chart: Promo radar
-new Chart("cPromoRadar",{type:"radar",data:{
-  labels:LABELS,
-  datasets:promos.map((p,i)=>({label:p.n.split(" ")[0],data:KEYS.map(k=>p[k]),borderColor:PAL[i],backgroundColor:PAL[i]+"22",pointRadius:4,borderWidth:2}))
-},options:{plugins:{legend:{position:"bottom",labels:{boxWidth:10,font:{size:11}}},...DL_OFF},scales:{r:{ticks:{backdropColor:"transparent",color:"#6B8DB5",font:{size:10}},grid:{color:"rgba(200,219,240,0.5)"},pointLabels:{color:"#134B8B",font:{size:11,weight:"600"}}}}}});
-
-// Table: Promos
-const tb=document.getElementById("tPromo");
-promos.forEach((p,i)=>{
-  const tr=document.createElement("tr");
-  tr.innerHTML=`<td><strong>${p.n}</strong></td>
-    <td>${p.n.includes("Viviana")||p.n.includes("Marcela")?"Cañasgordas":p.n.includes("Yina")?"Pereira":p.n.includes("Andrea")?"Menga / Bucaramanga":"Menga"}</td>
-    <td class="td-r">${p.reg}</td><td class="td-r ${i===0?"td-hi":""}">${p.b}</td>
-    <td class="td-r">${p.ne}</td><td class="td-r">${p.hm}</td><td class="td-r">${p.jh}</td>
-    <td class="td-r">${p.jm}</td><td class="td-r">${p.ta}</td>
-    <td class="td-r td-hi"><strong>${p.total}</strong></td><td class="td-r">${(p.total/p.reg).toFixed(1)}</td>`;
-  tb.appendChild(tr);
-});
-
-// Chart: PDV bar horizontal
-new Chart("cPdvBar",{type:"bar",data:{
-  labels:pdvs.map(p=>p.p.replace("PriceSmart ","")),
-  datasets:[{label:"Unidades",data:pdvs.map(p=>p.total),backgroundColor:PAL2,borderRadius:6,borderSkipped:false}]
-},options:{indexAxis:"y",plugins:{legend:{display:false},
-  datalabels:{display:true,anchor:'end',align:'end',color:'#2E5080',font:{family:"'Barlow Semi Condensed',sans-serif",weight:'600',size:12},formatter:v=>v}
-},scales:{...AXES,x:{...AXES.x,beginAtZero:true}}}});
-
-// Chart: PDV mix stacked %
-new Chart("cPdvMix",{type:"bar",data:{
-  labels:pdvs.map(p=>p.p.replace("PriceSmart ","")),
-  datasets:KEYS.map((k,i)=>({label:LABELS[i],data:pdvs.map(p=>p.total>0?+((p[k]/p.total*100).toFixed(1)):0),backgroundColor:PAL[i],borderRadius:i===5?4:0}))
-},options:{plugins:{
-  legend:{position:"bottom",labels:{boxWidth:12,padding:10,font:{size:11}}},
-  datalabels:{display:ctx=>ctx.dataset.data[ctx.dataIndex]>=6,anchor:'center',align:'center',
-    color:ctx=>ctx.datasetIndex<2?'#fff':'#134B8B',
-    font:{family:"'Barlow Semi Condensed',sans-serif",weight:'600',size:10},formatter:v=>v+'%'}
-},scales:{x:{stacked:true,ticks:{color:"#6B8DB5"},grid:GRID},y:{stacked:true,max:100,ticks:{color:"#6B8DB5",callback:v=>v+"%"},grid:GRID}}}});
-
-// Chart: PDV radar
-new Chart("cPdvRadar",{type:"radar",data:{
-  labels:LABELS,
-  datasets:pdvs.map((p,i)=>({label:p.p.replace("PriceSmart ",""),data:KEYS.map(k=>p[k]),borderColor:PAL2[i],backgroundColor:PAL2[i]+"22",pointRadius:4,borderWidth:2}))
-},options:{plugins:{legend:{position:"bottom",labels:{boxWidth:10,font:{size:11}}},...DL_OFF},scales:{r:{ticks:{backdropColor:"transparent",color:"#6B8DB5",font:{size:10}},grid:{color:"rgba(200,219,240,0.5)"},pointLabels:{color:"#134B8B",font:{size:11,weight:"600"}}}}}});
-
-// Chart: PDV avg
-new Chart("cPdvAvg",{type:"bar",data:{
-  labels:pdvs.map(p=>p.p.replace("PriceSmart ","")),
-  datasets:[{label:"Uds/visita",data:pdvs.map(p=>+(p.total/p.reg).toFixed(1)),backgroundColor:PAL2,borderRadius:6}]
-},options:{plugins:{legend:{display:false},...DL_TOP},scales:{...AXES,y:{...AXES.y,beginAtZero:true}}}});
-
-// Table: PDV
-const tb2=document.getElementById("tPdv");
-pdvs.forEach((p,i)=>{
-  const tr=document.createElement("tr");
-  tr.innerHTML=`<td><strong>${p.p.replace("PriceSmart ","")}</strong></td><td>${p.c}</td>
-    <td>${[...p.promos].map(x=>x.split(" ")[0]).join(", ")}</td><td class="td-r">${p.reg}</td>
-    <td class="td-r ${i===0?"td-hi":""}">${p.b}</td><td class="td-r">${p.ne}</td>
-    <td class="td-r">${p.hm}</td><td class="td-r">${p.jh+p.jm}</td>
-    <td class="td-r">${p.ta}</td><td class="td-r td-hi"><strong>${p.total}</strong></td>
-    <td class="td-r">${(p.total/p.reg).toFixed(1)}</td>`;
-  tb2.appendChild(tr);
-});
-
-// Product bars
-const pb=document.getElementById("prodBars");
-const maxP=Math.max(...KEYS.map(k=>totK[k]));
-KEYS.forEach((k,i)=>{
-  const pct=+(totK[k]/GRAND*100).toFixed(1);
-  const barW=+(totK[k]/maxP*100).toFixed(1);
-  const d=document.createElement("div");d.className="pbar";
-  d.innerHTML=`<div class="p-name">${FULL[i]}</div>
-    <div class="pbar-bg"><div class="pbar-fill" style="width:${barW}%;background:${PAL[i]}"></div></div>
-    <div class="p-val">${totK[k]}<span class="p-pct">${pct}%</span></div>`;
-  pb.appendChild(d);
-});
-
-// Chart: Dona
-new Chart("cDona",{type:"doughnut",data:{
-  labels:FULL,
-  datasets:[{data:KEYS.map(k=>totK[k]),backgroundColor:PAL,borderColor:"#F4F8FD",borderWidth:3,hoverOffset:10}]
-},options:{plugins:{
-  legend:{position:"bottom",labels:{boxWidth:12,padding:12,font:{size:12}}},
-  tooltip:{callbacks:{label:c=>`${c.label}: ${c.raw} uds (${(c.raw/GRAND*100).toFixed(1)}%)`}},
-  datalabels:{display:true,color:'#fff',font:{family:"'Barlow Semi Condensed',sans-serif",weight:'700',size:12},
-    formatter:(v,ctx)=>{const p=(v/GRAND*100).toFixed(1);return p>4?p+'%':''}}
-}}});
-
-// Chart: Compare
-const can=pdvs.find(p=>p.p.includes("Cañasgordas"));
-const men=pdvs.find(p=>p.p.includes("Menga"));
-new Chart("cCompare",{type:"bar",data:{
-  labels:LABELS,
-  datasets:[
-    {label:"Cañasgordas",data:KEYS.map(k=>can[k]),backgroundColor:"#1F6DC8",borderRadius:5},
-    {label:"Menga",data:KEYS.map(k=>men[k]),backgroundColor:"#72B3F0",borderRadius:5}
-  ]
-},options:{plugins:{
-  legend:{position:"bottom",labels:{boxWidth:12,padding:12,font:{size:12}}},
-  datalabels:{display:ctx=>ctx.dataset.data[ctx.dataIndex]>0,anchor:'end',align:'end',
-    color:'#2E5080',font:{family:"'Barlow Semi Condensed',sans-serif",weight:'600',size:10},formatter:v=>v}
-},scales:{...AXES,y:{...AXES.y,beginAtZero:true}}}});
-
-// Chart: Polar Pereira vs Cali
-const per=pdvs.find(p=>p.p.includes("Pereira"));
-const caliTotal={b:0,ne:0,hm:0,jh:0,jm:0,ta:0};
-D.filter(d=>d.c==="Cali").forEach(d=>KEYS.forEach(k=>caliTotal[k]+=d[k]));
-new Chart("cPolarPereira",{type:"radar",data:{
-  labels:LABELS,
-  datasets:[
-    {label:"Pereira",data:KEYS.map(k=>per[k]),borderColor:"#D97706",backgroundColor:"rgba(217,119,6,0.13)",pointRadius:5,borderWidth:2},
-    {label:"Cali (total)",data:KEYS.map(k=>caliTotal[k]),borderColor:"#134B8B",backgroundColor:"rgba(19,75,139,0.11)",pointRadius:5,borderWidth:2}
-  ]
-},options:{plugins:{legend:{position:"bottom",labels:{boxWidth:10,font:{size:12}}},...DL_OFF},scales:{r:{ticks:{backdropColor:"transparent",color:"#6B8DB5",font:{size:10}},grid:{color:"rgba(200,219,240,0.5)"},pointLabels:{color:"#134B8B",font:{size:12,weight:"600"}}}}}});
-
-// Tendency
-let tChart;
-function buildTend(filter){
-  const rows=filter==="all"?D:D.filter(d=>d.n===filter);
-  const m={};rows.forEach(d=>{if(!m[d.f])m[d.f]=0;m[d.f]+=d.total;});
-  const lbls=Object.keys(m).sort(),vals=lbls.map(l=>m[l]);
-  if(tChart)tChart.destroy();
-  tChart=new Chart("cTend",{type:"line",data:{
-    labels:lbls,
-    datasets:[{label:"Unidades en piso",data:vals,borderColor:"#1F6DC8",backgroundColor:"rgba(31,109,200,0.09)",pointBackgroundColor:"#134B8B",pointRadius:6,pointHoverRadius:8,fill:true,tension:0.35}]
-  },options:{plugins:{legend:{display:false},
-    datalabels:{display:true,anchor:'top',align:'top',offset:6,color:'#134B8B',font:{family:"'Barlow Semi Condensed',sans-serif",weight:'700',size:11},formatter:v=>v}
-  },scales:{...AXES,y:{...AXES.y,beginAtZero:true}}}});
-}
-buildTend("all");
-document.getElementById("tabsTend").querySelectorAll(".tab").forEach(t=>{
-  t.addEventListener("click",()=>{
-    document.getElementById("tabsTend").querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
-    t.classList.add("active");buildTend(t.dataset.f);
+// Agrupar por promotora
+function getPromos(){
+  const map = new Map();
+  D.forEach(d=>{
+    if(!map.has(d.n)) map.set(d.n, {n:d.n, visits:0, b:0,ne:0,hm:0,jh:0,jm:0,ta:0});
+    let p = map.get(d.n);
+    p.visits++; p.b+=d.b; p.ne+=d.ne; p.hm+=d.hm; p.jh+=d.jh; p.jm+=d.jm; p.ta+=d.ta;
   });
+  return Array.from(map.values()).map(p=>({...p, total:p.b+p.ne+p.hm+p.jh+p.jm+p.ta})).sort((a,b)=>b.total-a.total);
+}
+function getPdvs(){
+  const map = new Map();
+  D.forEach(d=>{
+    if(!map.has(d.p)) map.set(d.p, {p:d.p, c:d.c, visits:0, b:0,ne:0,hm:0,jh:0,jm:0,ta:0, promos:new Set()});
+    let pdv = map.get(d.p);
+    pdv.visits++; pdv.b+=d.b; pdv.ne+=d.ne; pdv.hm+=d.hm; pdv.jh+=d.jh; pdv.jm+=d.jm; pdv.ta+=d.ta;
+    pdv.promos.add(d.n);
+  });
+  return Array.from(map.values()).map(p=>({...p, total:p.b+p.ne+p.hm+p.jh+p.jm+p.ta, promoList:[...p.promos]})).sort((a,b)=>b.total-a.total);
+}
+
+const promos = getPromos();
+const pdvs = getPdvs();
+
+// Gráficas PROMOTORAS
+new Chart("cPromoBar",{type:"bar",data:{labels:promos.map(p=>p.n.split(" ")[0]), datasets:[{label:"Total",data:promos.map(p=>p.total),backgroundColor:PAL}]},options:{plugins:{legend:{display:false},datalabels:{display:true,anchor:'end',align:'end'}},scales:{y:{beginAtZero:true}}}});
+new Chart("cPromoStack",{type:"bar",data:{labels:promos.map(p=>p.n.split(" ")[0]), datasets:KEYS.map((k,i)=>({label:LABELS[i],data:promos.map(p=>p[k]),backgroundColor:PAL[i]}))},options:{plugins:{legend:{position:"bottom"},datalabels:{display:false}},scales:{x:{stacked:true},y:{stacked:true}}}});
+new Chart("cPromoAvg",{type:"bar",data:{labels:promos.map(p=>p.n.split(" ")[0]), datasets:[{label:"Uds/visita",data:promos.map(p=>+(p.total/p.visits).toFixed(1)),backgroundColor:PAL}]},options:{plugins:{legend:{display:false},datalabels:{display:true,anchor:'end',align:'end'}},scales:{y:{beginAtZero:true}}}});
+new Chart("cPromoRadar",{type:"radar",data:{labels:LABELS, datasets:promos.map((p,i)=>({label:p.n.split(" ")[0], data:KEYS.map(k=>p[k]), borderColor:PAL[i%PAL.length], backgroundColor:PAL[i%PAL.length]+"22"}))},options:{plugins:{legend:{position:"bottom"},datalabels:{display:false}}}});
+
+// Gráficas PLAZAS
+new Chart("cPdvBar",{type:"bar",data:{labels:pdvs.map(p=>p.p.replace("PriceSmart ","")), datasets:[{label:"Unidades",data:pdvs.map(p=>p.total),backgroundColor:["#0B2545","#134B8B","#1F6DC8","#D97706"]}]},options:{indexAxis:"y",plugins:{legend:{display:false},datalabels:{display:true,anchor:'end',align:'end'}},scales:{x:{beginAtZero:true}}}});
+new Chart("cPdvMix",{type:"bar",data:{labels:pdvs.map(p=>p.p.replace("PriceSmart ","")), datasets:KEYS.map((k,i)=>({label:LABELS[i],data:pdvs.map(p=>+(p[k]/p.total*100).toFixed(1)),backgroundColor:PAL[i]}))},options:{plugins:{legend:{position:"bottom"},datalabels:{display:ctx=>ctx.dataset.data[ctx.dataIndex]>8,anchor:'center',align:'center',formatter:v=>v+"%"}},scales:{x:{stacked:true},y:{stacked:true,max:100}}}});
+new Chart("cPdvRadar",{type:"radar",data:{labels:LABELS, datasets:pdvs.map((p,i)=>({label:p.p.replace("PriceSmart ",""), data:KEYS.map(k=>p[k]), borderColor:["#0B2545","#134B8B","#1F6DC8","#D97706"][i], backgroundColor:["#0B2545","#134B8B","#1F6DC8","#D97706"][i]+"22"}))},options:{plugins:{legend:{position:"bottom"},datalabels:{display:false}}}});
+new Chart("cPdvAvg",{type:"bar",data:{labels:pdvs.map(p=>p.p.replace("PriceSmart ","")), datasets:[{label:"Uds/visita",data:pdvs.map(p=>+(p.total/p.visits).toFixed(1)),backgroundColor:["#0B2545","#134B8B","#1F6DC8","#D97706"]}]},options:{plugins:{legend:{display:false},datalabels:{display:true,anchor:'end',align:'end'}},scales:{y:{beginAtZero:true}}}});
+
+// Tablas
+const tPromo = document.getElementById("tPromo");
+promos.forEach(p=>{
+  let tienda = p.n.includes("Viviana")||p.n.includes("Marcela")?"Cañasgordas":p.n.includes("Yina")?"Pereira":p.n.includes("Yadina")||p.n.includes("Daniela")?"Barranquilla":"Menga";
+  tPromo.innerHTML += `<tr><td><strong>${p.n}</strong></td><td>${tienda}</td><td class="td-r">${p.visits}</td><td class="td-r">${p.b}</td><td class="td-r">${p.ne}</td><td class="td-r">${p.hm}</td><td class="td-r">${p.jh}</td><td class="td-r">${p.jm}</td><td class="td-r">${p.ta}</td><td class="td-r td-hi"><strong>${p.total}</strong></td><td class="td-r">${(p.total/p.visits).toFixed(1)}</td></tr>`;
 });
-
-// Line: Cali
-const cF=["06/03","07/03","08/03","09/03","10/03","11/03","12/03","13/03","14/03","15/03"];
-const caliByDate={};cF.forEach(f=>{caliByDate[f]={b:0,ne:0,hm:0,jh:0,jm:0,ta:0};});
-D.filter(d=>d.c==="Cali").forEach(d=>{if(caliByDate[d.f])KEYS.forEach(k=>caliByDate[d.f][k]+=d[k]);});
-new Chart("cLineProd",{type:"line",data:{
-  labels:cF,
-  datasets:KEYS.map((k,i)=>({label:LABELS[i],data:cF.map(f=>caliByDate[f]?caliByDate[f][k]:0),borderColor:PAL[i],backgroundColor:"transparent",pointRadius:4,pointHoverRadius:7,tension:0.3,borderWidth:2}))
-},options:{plugins:{legend:{position:"bottom",labels:{boxWidth:10,padding:10,font:{size:11}}},
-  datalabels:{display:ctx=>{const v=ctx.dataset.data[ctx.dataIndex];return v>0&&(ctx.dataIndex===0||ctx.dataIndex===cF.length-1);},
-    anchor:'top',align:'top',offset:4,color:ctx=>PAL[ctx.datasetIndex],font:{family:"'Barlow Semi Condensed',sans-serif",weight:'600',size:10},formatter:v=>v}
-},scales:{...AXES,y:{...AXES.y,beginAtZero:true}}}});
-
-// Line: Pereira
-const pF=["20/03","21/03","22/03","23/03","24/03","25/03","26/03"];
-const perByDate={};pF.forEach(f=>{perByDate[f]={b:0,ne:0,hm:0,jh:0,jm:0,ta:0};});
-D.filter(d=>d.c==="Pereira").forEach(d=>{if(perByDate[d.f])KEYS.forEach(k=>perByDate[d.f][k]+=d[k]);});
-new Chart("cLinePereira",{type:"line",data:{
-  labels:pF,
-  datasets:KEYS.map((k,i)=>({label:LABELS[i],data:pF.map(f=>perByDate[f]?perByDate[f][k]:0),borderColor:PAL[i],backgroundColor:"transparent",pointRadius:4,pointHoverRadius:7,tension:0.3,borderWidth:2}))
-},options:{plugins:{legend:{position:"bottom",labels:{boxWidth:10,padding:10,font:{size:11}}},
-  datalabels:{display:ctx=>{const v=ctx.dataset.data[ctx.dataIndex];return v>0&&(ctx.dataIndex===0||ctx.dataIndex===pF.length-1);},
-    anchor:'top',align:'top',offset:4,color:ctx=>PAL[ctx.datasetIndex],font:{family:"'Barlow Semi Condensed',sans-serif",weight:'600',size:10},formatter:v=>v}
-},scales:{...AXES,y:{...AXES.y,beginAtZero:true}}}});
-
-// Heatmap
-const hg=document.getElementById("hmGrid");
-hg.style.gridTemplateColumns=`160px repeat(${LABELS.length},1fr)`;
-hg.innerHTML=`<div class="hm-h">Tienda</div>`+LABELS.map(l=>`<div class="hm-h">${l}</div>`).join("");
-const maxH=Math.max(...pdvs.flatMap(p=>KEYS.map(k=>p[k])));
+const tPdv = document.getElementById("tPdv");
 pdvs.forEach(p=>{
-  hg.innerHTML+=`<div class="hm-l">${p.p.replace("PriceSmart ","")}</div>`;
-  KEYS.forEach((k)=>{
-    const v=p[k],pct=maxH>0?v/maxH:0;
-    const r=Math.round(19+pct*(31-19)),g=Math.round(75+pct*(109-75)),bl=Math.round(139+pct*(200-139));
-    const tc=pct>0.5?"#fff":"#134B8B";
-    hg.innerHTML+=`<div class="hm-c" style="background:rgba(${r},${g},${bl},${0.15+pct*0.85});color:${tc}">${v}</div>`;
+  tPdv.innerHTML += `<tr><td><strong>${p.p.replace("PriceSmart ","")}</strong></td><td>${p.c}</td><td>${p.promoList.map(x=>x.split(" ")[0]).join(", ")}</td><td class="td-r">${p.visits}</td><td class="td-r">${p.b}</td><td class="td-r">${p.ne}</td><td class="td-r">${p.hm}</td><td class="td-r">${p.jh+p.jm}</td><td class="td-r">${p.ta}</td><td class="td-r td-hi"><strong>${p.total}</strong></td><td class="td-r">${(p.total/p.visits).toFixed(1)}</td></tr>`;
+});
+
+// Productos - barras
+const prodList = document.getElementById("prodBars");
+const maxProd = Math.max(...KEYS.map(k=>prodTot[k]));
+KEYS.forEach((k,i)=>{
+  let pct = (prodTot[k]/GRAND*100).toFixed(1);
+  let w = (prodTot[k]/maxProd*100).toFixed(1);
+  prodList.innerHTML += `<div class="pbar"><div class="p-name">${FULL[i]}</div><div class="pbar-bg"><div class="pbar-fill" style="width:${w}%;background:${PAL[i]}"></div></div><div class="p-val">${prodTot[k]}<span class="p-pct">${pct}%</span></div></div>`;
+});
+new Chart("cDona",{type:"doughnut",data:{labels:FULL, datasets:[{data:KEYS.map(k=>prodTot[k]),backgroundColor:PAL}]},options:{plugins:{legend:{position:"bottom"},datalabels:{display:true,formatter:(v)=>v>50?((v/GRAND)*100).toFixed(1)+"%":""}}}});
+
+// Compare Cañasgordas vs Menga
+const can = pdvs.find(p=>p.p.includes("Cañasgordas"));
+const men = pdvs.find(p=>p.p.includes("Menga"));
+new Chart("cCompare",{type:"bar",data:{labels:LABELS, datasets:[{label:"Cañasgordas",data:KEYS.map(k=>can[k]),backgroundColor:"#1F6DC8"},{label:"Menga",data:KEYS.map(k=>men[k]),backgroundColor:"#72B3F0"}]},options:{plugins:{legend:{position:"bottom"},datalabels:{display:true,anchor:'end',align:'end'}},scales:{y:{beginAtZero:true}}}});
+
+// Polar Barranquilla vs Pereira
+const baq = pdvs.find(p=>p.p.includes("Barranquilla"));
+const per = pdvs.find(p=>p.p.includes("Pereira"));
+new Chart("cPolarBaq",{type:"radar",data:{labels:LABELS, datasets:[{label:"Barranquilla",data:KEYS.map(k=>baq[k]),borderColor:"#D97706",backgroundColor:"#D9770622"},{label:"Pereira",data:KEYS.map(k=>per[k]),borderColor:"#134B8B",backgroundColor:"#134B8B22"}]},options:{plugins:{legend:{position:"bottom"},datalabels:{display:false}}}});
+
+// TENDENCIAS - orden cronológico izquierda a derecha
+const allDates = [...new Set(D.map(d=>d.f))].sort((a,b)=>{
+  let [da,ma]=a.split("/").map(Number), [db,mb]=b.split("/").map(Number);
+  return ma-mb || da-db;
+});
+
+function renderTrend(filter){
+  const filtered = filter==="all"? D : D.filter(d=>d.n===filter);
+  const daily = {}; allDates.forEach(d=>daily[d]=0);
+  filtered.forEach(d=>daily[d.f]+=d.total);
+  if(window.tc) window.tc.destroy();
+  window.tc = new Chart("cTend",{type:"line",data:{labels:allDates, datasets:[{label:"Ventas diarias",data:allDates.map(d=>daily[d]),borderColor:"#1F6DC8",backgroundColor:"rgba(31,109,200,0.1)",fill:true,tension:0.3,pointRadius:5}]},options:{plugins:{legend:{display:false},datalabels:{display:true,anchor:'top',align:'top',color:'#134B8B',formatter:v=>v>0?v:''}},scales:{y:{beginAtZero:true}}}});
+}
+renderTrend("all");
+document.querySelectorAll("#tabsTend .tab").forEach(t=>{
+  t.addEventListener("click",()=>{
+    document.querySelectorAll("#tabsTend .tab").forEach(x=>x.classList.remove("active"));
+    t.classList.add("active");
+    renderTrend(t.dataset.f);
   });
 });
 
-// Raw table
-let rawFilter="all";
+// Cali trend (fechas hasta 15/03)
+const caliDates = allDates.filter(d=>new Date(2026, parseInt(d.split("/")[1])-1, parseInt(d.split("/")[0])) <= new Date(2026,2,15));
+const caliData = {}; caliDates.forEach(d=>caliData[d]={b:0,ne:0,hm:0,jh:0,jm:0,ta:0});
+D.filter(d=>d.c==="Cali").forEach(d=>{if(caliData[d.f]) KEYS.forEach(k=>caliData[d.f][k]+=d[k]);});
+new Chart("cLineProd",{type:"line",data:{labels:caliDates, datasets:KEYS.map((k,i)=>({label:LABELS[i],data:caliDates.map(d=>caliData[d][k]),borderColor:PAL[i],tension:0.3}))},options:{plugins:{legend:{position:"bottom"},datalabels:{display:false}},scales:{y:{beginAtZero:true}}}});
+
+// Pereira trend (desde 20/03)
+const perDates = allDates.filter(d=>new Date(2026, parseInt(d.split("/")[1])-1, parseInt(d.split("/")[0])) >= new Date(2026,2,20));
+const perData = {}; perDates.forEach(d=>perData[d]={b:0,ne:0,hm:0,jh:0,jm:0,ta:0});
+D.filter(d=>d.c==="Pereira").forEach(d=>{if(perData[d.f]) KEYS.forEach(k=>perData[d.f][k]+=d[k]);});
+new Chart("cLinePereira",{type:"line",data:{labels:perDates, datasets:KEYS.map((k,i)=>({label:LABELS[i],data:perDates.map(d=>perData[d][k]),borderColor:PAL[i],tension:0.3}))},options:{plugins:{legend:{position:"bottom"},datalabels:{display:false}},scales:{y:{beginAtZero:true}}}});
+
+// Barranquilla trend
+const baqDates = ["28/03","29/03","30/03","31/03"];
+const baqData = {}; baqDates.forEach(d=>baqData[d]={b:0,ne:0,hm:0,jh:0,jm:0,ta:0});
+D.filter(d=>d.c==="Barranquilla").forEach(d=>{if(baqData[d.f]) KEYS.forEach(k=>baqData[d.f][k]+=d[k]);});
+new Chart("cLineBaq",{type:"line",data:{labels:baqDates, datasets:KEYS.map((k,i)=>({label:LABELS[i],data:baqDates.map(d=>baqData[d][k]),borderColor:PAL[i],tension:0.3}))},options:{plugins:{legend:{position:"bottom"},datalabels:{display:false}},scales:{y:{beginAtZero:true}}}});
+
+// Plaza comparison
+const plazaDaily = {};
+pdvs.forEach(p=>{plazaDaily[p.p]={}; allDates.forEach(d=>plazaDaily[p.p][d]=0);});
+D.forEach(d=>plazaDaily[d.p][d.f]+=d.total);
+new Chart("cLinePlaza",{type:"line",data:{labels:allDates, datasets:pdvs.map((p,i)=>({label:p.p.replace("PriceSmart ",""),data:allDates.map(d=>plazaDaily[p.p][d]),borderColor:["#0B2545","#134B8B","#1F6DC8","#D97706"][i],tension:0.3}))},options:{plugins:{legend:{position:"bottom"},datalabels:{display:false}},scales:{y:{beginAtZero:true}}}});
+
+// HEATMAP
+const hmGrid = document.getElementById("hmGrid");
+hmGrid.style.gridTemplateColumns = `160px repeat(${LABELS.length},1fr)`;
+hmGrid.innerHTML = `<div class="hm-h">Tienda</div>`+LABELS.map(l=>`<div class="hm-h">${l}</div>`).join("");
+const maxHeat = Math.max(...pdvs.flatMap(p=>KEYS.map(k=>p[k])));
+pdvs.forEach(p=>{
+  hmGrid.innerHTML += `<div class="hm-l">${p.p.replace("PriceSmart ","")}</div>`;
+  KEYS.forEach(k=>{
+    let v = p[k], pct = maxHeat>0?v/maxHeat:0;
+    let r=Math.round(19+pct*(31-19)), g=Math.round(75+pct*(109-75)), bl=Math.round(139+pct*(200-139));
+    hmGrid.innerHTML += `<div class="hm-c" style="background:rgba(${r},${g},${bl},${0.15+pct*0.85});color:${pct>0.5?"#fff":"#134B8B"}">${v}</div>`;
+  });
+});
+
+// RAW TABLE
+let rawFilter = "all";
 function renderRaw(){
-  const rows=rawFilter==="all"?D:D.filter(d=>d.p===rawFilter);
-  const tb=document.getElementById("rawBody");tb.innerHTML="";
+  let rows = rawFilter==="all"? D : D.filter(d=>d.p===rawFilter);
+  rows = [...rows].sort((a,b)=>{
+    let [da,ma]=a.f.split("/").map(Number), [db,mb]=b.f.split("/").map(Number);
+    return ma-mb || da-db;
+  });
+  const tb = document.getElementById("rawBody"); tb.innerHTML="";
   rows.forEach(d=>{
-    const tr=document.createElement("tr");
-    tr.innerHTML=`<td><span class="badge bd-blue">${d.f}</span></td>
-      <td>${d.n.split(" ")[0]} ${d.n.split(" ")[1]}</td>
-      <td>${d.p.replace("PriceSmart ","")}</td>
-      <td class="td-r">${d.b}</td><td class="td-r">${d.ne}</td>
-      <td class="td-r">${d.hm}</td><td class="td-r">${d.jh}</td>
-      <td class="td-r">${d.jm}</td><td class="td-r">${d.ta}</td>
-      <td class="td-r td-hi"><strong>${d.total}</strong></td>`;
-    tb.appendChild(tr);
+    tb.innerHTML += `<tr><td><span class="badge bd-blue">${d.f}</span></td><td>${d.n.split(" ")[0]} ${d.n.split(" ")[1]||""}</td><td>${d.p.replace("PriceSmart ","")}</td><td class="td-r">${d.b}</td><td class="td-r">${d.ne}</td><td class="td-r">${d.hm}</td><td class="td-r">${d.jh}</td><td class="td-r">${d.jm}</td><td class="td-r">${d.ta}</td><td class="td-r td-hi"><strong>${d.total}</strong></td></tr>`;
   });
 }
 renderRaw();
-document.getElementById("tabsRaw").querySelectorAll(".tab").forEach(t=>{
-  t.addEventListener("click",()=>{document.getElementById("tabsRaw").querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));t.classList.add("active");rawFilter=t.dataset.r;renderRaw();});
+document.querySelectorAll("#tabsRaw .tab").forEach(t=>{
+  t.addEventListener("click",()=>{
+    document.querySelectorAll("#tabsRaw .tab").forEach(x=>x.classList.remove("active"));
+    t.classList.add("active");
+    rawFilter = t.dataset.r;
+    renderRaw();
+  });
 });
 
-// Sort
-function sortT(id,col){
-  const tbl=document.getElementById(id);
-  const rows=[...tbl.querySelectorAll("tbody tr")];
-  const asc=tbl.dataset.sc===String(col)&&tbl.dataset.sd==="asc";
-  rows.sort((a,b)=>{const av=a.cells[col].innerText.trim(),bv=b.cells[col].innerText.trim();const an=parseFloat(av),bn=parseFloat(bv);if(!isNaN(an)&&!isNaN(bn))return asc?bn-an:an-bn;return asc?bv.localeCompare(av):av.localeCompare(bv);});
-  tbl.dataset.sc=col;tbl.dataset.sd=asc?"desc":"asc";
-  const tb=tbl.querySelector("tbody");rows.forEach(r=>tb.appendChild(r));
+// Sort function
+function sortTable(tableId, col){
+  const table = document.getElementById(tableId);
+  const tbody = table.querySelector("tbody");
+  const rows = Array.from(tbody.querySelectorAll("tr"));
+  const isAsc = table.dataset.sort === col+"-asc";
+  rows.sort((a,b)=>{
+    let aVal = a.cells[col].innerText.replace(/[^0-9.-]/g, '');
+    let bVal = b.cells[col].innerText.replace(/[^0-9.-]/g, '');
+    let aNum = parseFloat(aVal), bNum = parseFloat(bVal);
+    if(!isNaN(aNum) && !isNaN(bNum)) return isAsc ? aNum-bNum : bNum-aNum;
+    aVal = a.cells[col].innerText.toLowerCase(); bVal = b.cells[col].innerText.toLowerCase();
+    return isAsc ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+  });
+  rows.forEach(r=>tbody.appendChild(r));
+  table.dataset.sort = isAsc ? col+"-desc" : col+"-asc";
 }
 
-// Scroll animation
-const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show");});},{threshold:0.06});
+// Intersection Observer
+const obs = new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show");});},{threshold:0.06});
 document.querySelectorAll(".fade-in").forEach(el=>obs.observe(el));
 
 // Active nav
-const secs=document.querySelectorAll("section[id]");
-const navLinks=document.querySelectorAll(".nav a");
-window.addEventListener("scroll",()=>{let cur="";secs.forEach(s=>{if(window.scrollY>=s.offsetTop-100)cur=s.id;});navLinks.forEach(a=>{a.classList.toggle("active",a.getAttribute("href")==="#"+cur);});},{passive:true});
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav a");
+window.addEventListener("scroll",()=>{
+  let current = "";
+  sections.forEach(s=>{if(window.scrollY >= s.offsetTop-100) current = s.id;});
+  navLinks.forEach(a=>{a.classList.toggle("active", a.getAttribute("href")==="#"+current);});
+});
 </script>
 </body>
 </html>
